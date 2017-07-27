@@ -1,0 +1,114 @@
+.header .logo i {
+  font-size: 100px;
+  line-height: 140px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.header h1 {
+  line-height: 140px;
+}
+
+.lists select {
+  margin: 0;
+}
+
+.filters .title a, .results .title a {
+  margin-bottom: 0;
+}
+
+.list-item {
+  margin: 8px 0;
+}
+
+.list-items :last-child {
+  border-bottom: none;
+}
+
+.filter-info .badge, .filters .badge {
+  position: absolute;
+  margin: -10px 0 0 -10px;
+}
+
+.gender .large {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+.body {
+  padding: 0;
+}
+
+.footer {
+  position: static;
+  height: auto;
+  padding: 20px 0;
+  margin-top: 40px;
+  background-color: #767676;
+  color: #fefefe;
+}
+
+.list-items .active {
+  background: $menu-item-background-active;
+  a {
+    color: $menu-item-color-active;
+  }
+  color: $menu-item-color-active;
+}
+
+@media print, screen and (min-width: 40em) {
+  .footer {
+    bottom: 0;
+    height: 120px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .body {
+    padding: 0 0 200px 0;
+  }
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}

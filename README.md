@@ -13,11 +13,7 @@ A simple theme with the latest stuff and such.
 
 ## Installation
 
-1. Drop it in your themes folder.
-
-== Changelog ==
-
-= 1.0 =
-* Released: November 12, 2017
-
-Initial release
+1. `git clone`
+2. `npm install`
+3. `grunt sassProd`
+4. Move to your themes folder.

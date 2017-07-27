@@ -13,7 +13,7 @@
                         <?php
                         $i = 0;
                         while (have_posts()) : the_post();
-                            if($i % 2 == 0) {
+                            if ($i % 2 == 0) {
                                 echo '<div class="row">';
                             }
                             $post = get_post();
@@ -29,12 +29,12 @@
                             }
                             echo "<small>Updated <time>$post->post_modified</time></small>";
                             echo '</div></div>';
-                            if($i % 2 == 1) {
+                            if ($i % 2 == 1) {
                                 echo '</div>';
                             }
                             $i++;
                         endwhile;
-                        if($i % 2 == 1) {
+                        if ($i % 2 == 1) {
                             echo '</div>';
                         }
                         the_posts_pagination(array(

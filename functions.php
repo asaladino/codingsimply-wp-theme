@@ -243,7 +243,6 @@ function codingsimply_scripts()
 
     // Load our main stylesheet.
     wp_enqueue_style('codingsimply-style', get_stylesheet_uri(), array(), '6.2.4');
-    wp_enqueue_style('codingsimply-style-app', get_template_directory_uri() . '/css/app.css', array(), '1.0');
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');

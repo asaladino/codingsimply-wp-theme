@@ -1,2 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 package-lock.json
+style.css
+style.css.map
+node_modules/
