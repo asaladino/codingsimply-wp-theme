@@ -24,6 +24,9 @@ module.exports = function (grunt) {
                 }
             }
         },
+        clean: {
+            build: ['build/codingsimply']
+        },
         copy: {
             libs: {
                 files: [
@@ -44,8 +47,17 @@ module.exports = function (grunt) {
             build: {
                 files: [
                     {
-                        src: [],
-                        dest: 'build/'
+                        src: [
+                            'css/**',
+                            'inc/**',
+                            'js/**',
+                            '*.php',
+                            'README.md',
+                            'LICENSE',
+                            'screenshot.png',
+                            'style.css'
+                        ],
+                        dest: 'build/codingsimply/'
                     }
                 ]
             }
@@ -54,7 +66,8 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('buildProd', ['copy:build']);
-    grunt.registerTask('assetBuild', ['sass:dist', 'copy:libs']);
+    grunt.registerTask('build', ['clean:build', 'copy:build']);
+    grunt.registerTask('assets', ['sass:dist', 'copy:libs']);
 };
