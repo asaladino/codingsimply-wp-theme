@@ -25,25 +25,27 @@ module.exports = function (grunt) {
             }
         },
         copy: {
+            libs: {
+                files: [
+                    {
+                        expand: true,
+                        flatten: true,
+                        src: [
+                            'node_modules/foundation-sites/dist/js/foundation.js',
+                            'node_modules/foundation-sites/dist/js/foundation.min.js',
+                            'node_modules/jquery/dist/jquery.js',
+                            'node_modules/jquery/dist/jquery.min.js',
+                            'node_modules/jquery/dist/jquery.min.map'
+                        ],
+                        dest: './js/libs/'
+                    }
+                ]
+            },
             build: {
                 files: [
                     {
-                        src: [
-                            'bin/*',
-                            'config/**',
-                            'logs/empty',
-                            'plugins/**',
-                            'src/**',
-                            'tmp/empty',
-                            'vendor/**',
-                            'webroot/css/*.css',
-                            'webroot/img/**',
-                            'webroot/js/dist/*.js',
-                            'webroot/.htaccess',
-                            'webroot/favicon.ico',
-                            'webroot/index.php'
-                        ],
-                        dest: 'build/naming_lab/'
+                        src: [],
+                        dest: 'build/'
                     }
                 ]
             }
@@ -54,5 +56,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-sass');
 
     grunt.registerTask('buildProd', ['copy:build']);
-    grunt.registerTask('sassProd', ['sass:dist']);
+    grunt.registerTask('assetBuild', ['sass:dist', 'copy:libs']);
 };

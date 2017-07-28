@@ -8,13 +8,8 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-    <header id="masthead" class="site-header" role="banner">
-        <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-            <div class="title-bar-title"><?php bloginfo('name'); ?></div>
-        </div>
-
+<div id="page" class="site">
+    <header id="masthead" class="site-header">
         <div class="top-bar" id="main-menu" data-animate="hinge-in-from-top spin-out">
             <div class="top-bar-left">
                 <ul class="dropdown menu" data-dropdown-menu>

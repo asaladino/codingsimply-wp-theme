@@ -236,29 +236,18 @@ add_action('wp_head', 'codingsimply_javascript_detection', 0);
 function codingsimply_scripts()
 {
     // Add custom fonts, used in the main stylesheet.
-    wp_enqueue_style('codingsimply-fonts', codingsimply_fonts_url(), array(), null);
-
-    // Add Genericons, used in the main stylesheet.
-    wp_enqueue_style('genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.2');
+    wp_enqueue_style('codingsimply-fonts', codingsimply_fonts_url(), [], null);
 
     // Load our main stylesheet.
-    wp_enqueue_style('codingsimply-style', get_stylesheet_uri(), array(), '6.2.4');
+    wp_enqueue_style('codingsimply-style', get_stylesheet_uri(), [], '6.4.1');
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
 
-    if (is_singular() && wp_attachment_is_image()) {
-        //wp_enqueue_script('codingsimply-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array('jquery'), '20141010');
-    }
-
     wp_deregister_script('jquery');
-    wp_register_script('jquery', get_template_directory_uri() . '/js/foundation/vendor/jquery.js', false, '2.2.2');
-
-    wp_enqueue_script('codingsimply-foundation', get_template_directory_uri() . '/js/foundation/vendor/foundation.min.js', ['jquery'], '6.2.4', true);
-
-    wp_enqueue_script('codingsimply-foundation-app', get_template_directory_uri() . '/js/foundation/app.js', ['codingsimply-foundation', 'jquery'], '6.2.4', true);
-
+    wp_register_script('jquery', get_template_directory_uri() . '/js/libs/jquery.min.js', false, '3.1.1');
+    wp_enqueue_script('codingsimply-foundation', get_template_directory_uri() . '/js/libs/foundation.min.js', ['jquery'], '6.4.1', true);
     wp_enqueue_script('codingsimply-script', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20150330', true);
     wp_localize_script('codingsimply-script', 'screenReaderText', array(
         'expand' => '<span class="screen-reader-text">' . __('expand child menu', 'codingsimply') . '</span>',
