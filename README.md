@@ -9,6 +9,8 @@
 * License: MIT
 * Tags: foundation
 
+[![Built with Grunt](./notes/simple.png)](https://codingsimply.com/)
+
 ## Description
 A simple theme with the latest stuff and such.
 
