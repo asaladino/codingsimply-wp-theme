@@ -79,4 +79,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', ['clean:build', 'copy:build']);
     grunt.registerTask('assets', ['sass:dist', 'copy:libs']);
+
+    grunt.registerTask('default', ['assets', 'build']);
 };

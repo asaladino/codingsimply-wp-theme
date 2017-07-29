@@ -20,5 +20,5 @@ A simple theme with the latest stuff and such.
 
 1. `git clone`
 2. `npm install`
-3. `grunt assetBuild`
-4. Move to your themes folder.
+3. `grunt`
+4. Copy `build/codingsimply` to your themes folder.
