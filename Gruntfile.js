@@ -41,6 +41,14 @@ module.exports = function (grunt) {
                             'node_modules/jquery/dist/jquery.min.map'
                         ],
                         dest: './js/libs/'
+                    },
+                    {
+                        expand: true,
+                        flatten: true,
+                        src: [
+                            'node_modules/font-awesome/fonts/*'
+                        ],
+                        dest: './fonts/'
                     }
                 ]
             },
@@ -48,6 +56,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         src: [
+                            'fonts/**',
                             'css/**',
                             'inc/**',
                             'js/**',

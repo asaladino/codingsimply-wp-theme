@@ -338,7 +338,7 @@ function codingsimply_search_form_modify($html)
                     <input class="input-group-field"
                            type="text"
                            name="s"
-                           placeholder="Search"
+                           placeholder="term..."
                            value="' . (isset($_GET['s']) ? $_GET['s'] : '') . '">
                     <div class="input-group-button">
                         <input type="submit" class="button" value="Search">
