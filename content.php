@@ -11,6 +11,7 @@
         ?>
     </header>
     <?php codingsimply_entry_meta(); ?>
+    <hr/>
     <div class="entry-content">
         <?php
         the_content(sprintf(

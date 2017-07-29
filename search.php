@@ -1,12 +1,12 @@
 <?php
 get_header(); ?>
 <div class="row">
-    <div class="large-12 columns">
+    <div class="large-8 large-push-2 columns">
         <section id="primary" class="content-area">
-            <main id="main" class="site-main" role="main">
+            <main id="main" class="site-main">
                 <?php if (have_posts()) : ?>
                     <header class="page-header">
-                        <h1 class="page-title"><?php printf(__('Search Results for: %s', 'codingsimply'), get_search_query()); ?></h1>
+                        <h2 class="subheader page-title"><?php printf(__('Search Results for: %s', 'codingsimply'), get_search_query()); ?></h2>
                     </header>
                     <?php
                     while (have_posts()) :
