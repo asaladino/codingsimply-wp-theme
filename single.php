@@ -16,6 +16,7 @@
     </div>
     <div class="row">
         <div class="large-8 large-push-2 columns">
+            <hr/>
             <?php get_sidebar(); ?>
         </div>
     </div>

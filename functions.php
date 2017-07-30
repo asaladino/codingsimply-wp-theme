@@ -142,7 +142,7 @@ function codingsimply_widgets_init()
         'description' => __('Add widgets here to appear in your sidebar.', 'codingsimply'),
         'before_widget' => '<div class="large-6 columns"><aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside></div>',
-        'before_title' => '<h3 class="widget-title">',
+        'before_title' => '<h4 class="subheading widget-title">',
         'after_title' => '</h3>',
     ));
 }

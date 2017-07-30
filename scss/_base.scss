@@ -13,3 +13,7 @@
 .current-menu-item {
   text-decoration: underline;
 }
+
+.widget_categories {
+  @extend .large-8
+}
