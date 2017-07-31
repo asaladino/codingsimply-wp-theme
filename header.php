@@ -31,8 +31,8 @@
         <div class="off-canvas-content" data-off-canvas-content>
             <header id="masthead" class="site-header">
                 <div data-sticky-container>
-                    <div class="top-bar" id="main-menu" data-sticky data-options="marginTop:0;"
-                         style="width:100%">
+                    <div class="top-bar" id="main-menu" data-sticky data-sticky-on="small" data-options="marginTop:0;"
+                         data-top-anchor="1"  style="width:100%">
                         <div class="top-bar-left">
                             <ul class="menu" data-dropdown-menu>
                                 <li class="show-for-small-only">
