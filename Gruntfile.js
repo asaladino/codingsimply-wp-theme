@@ -64,7 +64,8 @@ module.exports = function (grunt) {
                             'README.md',
                             'LICENSE',
                             'screenshot.png',
-                            'style.css'
+                            'style.css',
+                            'style.css.map'
                         ],
                         dest: 'build/codingsimply/'
                     }
