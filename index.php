@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <div class="row">
-        <div class="large-12 columns">
+        <div class="large-8 large-push-2 columns">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
                     <?php if (have_posts()) : ?>
@@ -9,20 +9,8 @@
                         <?php endif; ?>
 
                         <?php while (have_posts()) :
-                            the_post(); ?>
-                            <div class="row">
-                                <?php $post = get_post(); ?>
-                                <div class="large-8 large-push-2 columns post-entry">
-                                    <h2><a href="<?= $post->guid ?>"><?= $post->post_title ?></a></h2>
-                                    <time class="post-date"><?= date('m.d.Y', strtotime($post->post_modified)) ?></time>
-                                    <?php
-                                    $description = get_post_custom_values('_genesis_description');
-                                    if (isset($description[0])) {
-                                        echo '<p>' . $description[0] . '</p>';
-                                    }
-                                    ?>
-                                </div>
-                            </div>
+                            the_post();
+                            get_template_part('content', 'search'); ?>
                         <?php endwhile; ?>
                         <?php
                         the_posts_pagination(array(

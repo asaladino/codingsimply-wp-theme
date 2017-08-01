@@ -5,9 +5,7 @@ get_header(); ?>
         <section id="primary" class="content-area">
             <main id="main" class="site-main">
                 <?php if (have_posts()) : ?>
-                    <header class="page-header">
-                        <h2 class="subheader page-title"><?php printf(__('Search Results for: %s', 'codingsimply'), get_search_query()); ?></h2>
-                    </header>
+                    <?= codingsimply_search_form_modify('') ?>
                     <?php
                     while (have_posts()) :
                         the_post();

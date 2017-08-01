@@ -1,17 +1,14 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php //codingsimply_post_thumbnail(); ?>
-    <header class="entry-header">
-        <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
-    </header>
-    <?php if ('post' == get_post_type()) : ?>
-        <footer class="entry-footer">
-            <?php codingsimply_entry_meta(); ?>
-            <?php edit_post_link(__('Edit', 'codingsimply'), '<span class="edit-link">', '</span>'); ?>
-        </footer>
-    <?php else : ?>
-        <?php edit_post_link(__('Edit', 'codingsimply'), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->'); ?>
-    <?php endif; ?>
-    <div class="entry-summary">
-        <?php the_excerpt(); ?>
+<div class="row">
+    <?php $post = get_post(); ?>
+    <div class="large-12 columns post-entry">
+        <h2><a href="<?= $post->guid ?>"><?= $post->post_title ?></a></h2>
+        <time class="post-date"><?= date('m.d.Y', strtotime($post->post_modified)) ?></time>
+        <?php
+        $description = get_post_custom_values('_genesis_description');
+        if (isset($description[0])) {
+            echo '<p>' . $description[0] . '</p>';
+        }
+        ?>
     </div>
-</article>
+</div>
+<hr/>
