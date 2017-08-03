@@ -63,7 +63,7 @@
             <div class="tiny reveal" id="search-modal" data-reveal data-animation-in="slide-in-down fast"
                  data-animation-out="slide-out-up fast">
                 <label>Search
-                    <?= codingsimply_search_form_modify('') ?>
+	                <?= codingsimply_search_form_modify( '' ) ?>
                 </label>
                 <button class="close-button" data-close aria-label="Close modal" type="button">
                     <span aria-hidden="true">&times;</span>
