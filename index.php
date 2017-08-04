@@ -16,14 +16,24 @@
                         <div class="orbit-slide-content">
                             <div class="row  small-collapse medium-uncollapse large-uncollapse">
                                 <div class="large-12 columns show-for-small-only text-center">
-                                    <h2>Group Password Decrypter</h2>
+                                    <h2>
+                                        <a href="https://github.com/asaladino/group-password-decrypter" target="_blank">
+                                            Group Password Decrypter
+                                        </a>
+                                    </h2>
                                 </div>
                                 <div class="small-12 medium-5 medium-push-2 large-5 large-push-2 columns text-center">
-                                    <img class="large-12"
-                                         src="https://raw.githubusercontent.com/asaladino/group-password-decrypter/master/notes/empty.png"/>
+                                    <a href="https://github.com/asaladino/group-password-decrypter" target="_blank">
+                                        <img class="large-12"
+                                             src="https://raw.githubusercontent.com/asaladino/group-password-decrypter/master/notes/empty.png"/>
+                                    </a>
                                 </div>
                                 <div class="medium-3 medium-pull-2 large-3 large-pull-2 columns hide-for-small-only">
-                                    <h3>Group Password Decrypter</h3>
+                                    <h3>
+                                        <a href="https://github.com/asaladino/group-password-decrypter" target="_blank">
+                                            Group Password Decrypter
+                                        </a>
+                                    </h3>
                                     <p class="hide-for-medium-only">
                                         A little java utility for decrypting Cisco group passwords in pcf files. Most
                                         of the work was done by ptoomey3, I just packaged it in with javaFx.
@@ -36,14 +46,20 @@
                         <div class="orbit-slide-content">
                             <div class="row  small-collapse medium-uncollapse large-uncollapse">
                                 <div class="large-12 columns show-for-small-only text-center">
-                                    <h2>PongP</h2>
+                                    <h2>
+                                        <a href="https://github.com/asaladino/pong-p" target="_blank">PongP</a>
+                                    </h2>
                                 </div>
                                 <div class="small-12 medium-5 medium-push-2 large-5 large-push-2 columns text-center">
-                                    <img class="large-12"
-                                         src="https://raw.githubusercontent.com/asaladino/pong-p/master/notes/pong.png"/>
+                                    <a href="https://github.com/asaladino/pong-p" target="_blank">
+                                        <img class="large-12"
+                                             src="https://raw.githubusercontent.com/asaladino/pong-p/master/notes/pong.png"/>
+                                    </a>
                                 </div>
                                 <div class="medium-3 medium-pull-2 large-3 large-pull-2 columns hide-for-small-only">
-                                    <h3>PongP</h3>
+                                    <h3>
+                                        <a href="https://github.com/asaladino/pong-p" target="_blank">PongP</a>
+                                    </h3>
                                     <p class="hide-for-medium-only">
                                         Pong for python using pygame and hopefully tensorflow. This game is based on
                                         Siraj's pong neural network and video.
