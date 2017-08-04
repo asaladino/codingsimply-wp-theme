@@ -12,7 +12,7 @@
 						the_posts_pagination( array(
 							'prev_text'          => __( 'Previous page', 'codingsimply' ),
 							'next_text'          => __( 'Next page', 'codingsimply' ),
-							'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'codingsimply' ) . ' </span>',
+							'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'codingsimply' ) . '</span>',
 						) );
 					else :
 						get_template_part( 'content', 'none' );
