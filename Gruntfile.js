@@ -71,12 +71,22 @@ module.exports = function (grunt) {
                     }
                 ]
             }
-        }
+        },
+        watch: {
+            sass: {
+                files: ['scss/**.scss'],
+                tasks: ['sass:dist'],
+                options: {
+                    spawn: false,
+                },
+            },
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('build', ['clean:build', 'copy:build']);
     grunt.registerTask('assets', ['sass:dist', 'copy:libs']);

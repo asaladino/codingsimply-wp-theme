@@ -21,3 +21,16 @@
 .site-main {
   padding: 2rem 0 0 0;
 }
+
+.project-slide-show {
+  padding: 0;
+  background: $light-gray;
+  box-shadow: inset 0 0 0.25rem 0 $dark-gray;
+  .orbit-slide .orbit-slide-content {
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+    h3 {
+      margin-top: 2rem;
+    }
+  }
+}

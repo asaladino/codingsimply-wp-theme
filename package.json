@@ -19,6 +19,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "rimraf": "^2.6.1",
     "webpack": "^2.2.1"
