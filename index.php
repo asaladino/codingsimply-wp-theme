@@ -9,11 +9,11 @@
 							get_template_part( 'content', 'search' ); ?>
 						<?php endwhile; ?>
 						<?php
-						the_posts_pagination( array(
+						the_posts_pagination( [
 							'prev_text'          => __( 'Previous page', 'codingsimply' ),
 							'next_text'          => __( 'Next page', 'codingsimply' ),
 							'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'codingsimply' ) . '</span>',
-						) );
+						] );
 					else :
 						get_template_part( 'content', 'none' );
 					endif; ?>
