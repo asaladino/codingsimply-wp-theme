@@ -1,6 +1,8 @@
 <?php
 
-use src\Core\Repository\ProjectsRepository;
+namespace CodingSimplyThemes;
+
+use CodingSimplyProjects\Core\Repository\ProjectsRepository;
 
 get_header();
 
