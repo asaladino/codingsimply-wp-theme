@@ -3,29 +3,15 @@
         <div class="large-8 large-push-2 columns">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
-                    <nav aria-label="You are here:" role="navigation">
-                        <ul class="breadcrumbs">
-                            <li><a href="/projects/">Projects</a></li>
-                            <li>
-                                <span class="show-for-sr"></span>Project
-                            </li>
-                        </ul>
-                    </nav>
                     <?php
                     while (have_posts()) : the_post();
-                        get_template_part('content', get_post_format());
+                        get_template_part('content', 'projects');
                         if (comments_open() || get_comments_number()) :
                             comments_template();
                         endif;
                     endwhile; ?>
                 </main>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="large-8 large-push-2 columns">
-            <hr/>
-            <?php get_sidebar(); ?>
         </div>
     </div>
 <?php get_footer(); ?>
