@@ -25,4 +25,23 @@
         </section>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        function resizeIcons() {
+            $('.project-icon').each(function(){
+                $(this).height($(this).width());
+            });
+            $('.project-initials').each(function(){
+                $(this).css('font-size', ($(this).parent().height() * .5));
+            });
+            $('.project-owner').each(function(){
+                $(this).css('font-size', ($(this).parent().height() * .2));
+            });
+        }
+        resizeIcons();
+        $(window).resize(resizeIcons);
+    });
+</script>
+
 <?php get_footer(); ?>

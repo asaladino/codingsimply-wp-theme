@@ -26,6 +26,22 @@
   display: none;
 }
 
+.project-icon {
+  border: 12px solid get-color('primary');
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+  color: $black;
+}
+
+.callout.no-border {
+  border: none;
+}
+
+.shadow {
+  box-shadow: 0 0 0.25rem 0 $dark-gray;
+}
+
 .project-slide-show {
   padding: 0;
   background: $light-gray;
