@@ -6,10 +6,10 @@ use CodingSimplyProjects\Core\Repository\ProjectsRepository;
 
 get_header();
 
-$projects = ProjectsRepository::find();
+$projects = ProjectsRepository::promoted();
 if ( count( $projects ) > 0 ) :?>
     <div class="project-slide-show">
-        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <div class="orbit" role="region" data-orbit>
             <div class="orbit-wrapper">
                 <div class="orbit-controls">
                     <button class="orbit-previous">
