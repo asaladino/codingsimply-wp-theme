@@ -5,11 +5,11 @@
 * Contributors: Adam Saladino
 * Requires at least: Wordpress 4.1
 * Tested up to: Wordpress 4.8
-* Version: 1.6
+* Version: 0.1.0
 * License: MIT
 * Tags: foundation
 
-[![Built with Grunt](./notes/simple.png)](https://codingsimply.com/)
+[![Home page](./notes/simple.png)](https://codingsimply.com/)
 
 ## Description
 A simple theme with the latest stuff and such.
