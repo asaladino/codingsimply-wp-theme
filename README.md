@@ -5,7 +5,6 @@
 * Contributors: Adam Saladino
 * Requires at least: Wordpress 4.1
 * Tested up to: Wordpress 4.8
-* Version: 0.1.0
 * License: MIT
 * Tags: foundation
 

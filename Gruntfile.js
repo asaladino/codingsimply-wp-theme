@@ -78,9 +78,9 @@ module.exports = function (grunt) {
                 tasks: ['sass:dist'],
                 options: {
                     spawn: false,
-                },
-            },
-        },
+                }
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-copy');
