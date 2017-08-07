@@ -27,19 +27,19 @@ if ( count( $projects ) > 0 ) :?>
                                 <div class="row  small-collapse medium-uncollapse large-uncollapse">
                                     <div class="large-12 columns show-for-small-only text-center">
                                         <h2>
-                                            <a href="<?= $project->git_url ?>" target="_blank">
+                                            <a href="<?php the_permalink($project->post) ?>">
 												<?php the_title(); ?>
                                             </a>
                                         </h2>
                                     </div>
                                     <div class="small-12 medium-5 medium-push-2 large-5 large-push-2 columns text-center">
-                                        <a href="<?= $project->git_url ?>" target="_blank">
+                                        <a href="<?php the_permalink($project->post) ?>">
                                             <img class="large-12" src="<?= $project->screenshot_url ?>"/>
                                         </a>
                                     </div>
                                     <div class="medium-3 medium-pull-2 large-3 large-pull-2 columns hide-for-small-only">
                                         <h3>
-                                            <a href="<?= $project->git_url ?>" target="_blank">
+                                            <a href="<?php the_permalink($project->post) ?>">
 												<?= $project->post->post_title ?>
                                             </a>
                                         </h3>
