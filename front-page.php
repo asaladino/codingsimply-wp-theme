@@ -2,7 +2,7 @@
 
 namespace CodingSimplyThemes;
 
-use CodingSimplyProjects\Core\Repository\ProjectsRepository;
+use CodingSimply\WpPlugin\Core\Repository\ProjectsRepository;
 
 get_header();
 

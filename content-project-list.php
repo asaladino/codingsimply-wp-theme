@@ -1,7 +1,7 @@
 <?php
 
-use CodingSimplyProjects\Model\Project;
-use CodingSimplyProjects\View\Helper\ProjectHelper;
+use CodingSimply\WpPlugin\Model\Project;
+use CodingSimply\WpPlugin\View\Helper\ProjectHelper;
 
 $project       = Project::init( get_post() );
 $projectHelper = new ProjectHelper( $project );
